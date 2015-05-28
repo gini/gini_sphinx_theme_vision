@@ -1,0 +1,57 @@
+// Logo
+#gini-logo{
+    display: block;
+    font-size: 0;
+    background-image: url('../logo.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-size(contain);
+    height: $base-font-size * 3;
+    margin-bottom: $base-font-size;
+
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+// Nice menu.
+.wy-menu .toctree-l3 {
+    margin-left: 2em;
+}
+
+// Render bug in Chrome on MacOS X that partially hides the sticky nav.
+.wy-nav-side.stickynav{
+    -webkit-transform: translateZ(0);
+}
+
+// Nicer ToDos.
+.admonition-todo {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-left: 3px solid rgba(255, 0, 0, 0.5);
+    padding: 24px;
+}
+
+// No unnecessary scrollbars on the tables.
+.wy-table-responsive table td {
+    white-space: normal;
+}
+
+// Nicer headings.
+.section h2 {
+    margin-top: 3.5em;
+}
+
+.headerlink {
+    font-size: 1em;
+    margin-left: 1em;
+    font-family: $base-font-family;
+    display: none;
+}
+
+h1, h2, h3, h4 {
+    &:hover {
+        .headerlink {
+            display: inline-block;
+        }
+    }
+}

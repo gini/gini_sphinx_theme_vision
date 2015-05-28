@@ -1,0 +1,34 @@
+$icon-logo:                '\e000';
+$icon-hamburger-menu:      '\e001';
+$icon-circle:              '\e002';
+$icon-arrow-down:          '\e003';
+$icon-triangle-right:      '\e004';
+$icon-twitter:             '\e005';
+$icon-github:              '\e006';
+$icon-facebook:            '\e007';
+$icon-play:                '\e008';
+$icon-news:                '\e009';
+$icon-circled-arrow-right: '\e00a';
+$icon-circled-arrow-left:  '\e00b';
+$icon-sadface:             '\e00c';
+$icon-stylized-arrow-southwest: '\e00d';
+$icon-stylized-arrow-southeast: '\e00e';
+$icon-checkmark:           '\e00f';
+$icon-stylized-arrow-east-up:   '\e010';
+$icon-stylized-arrow-east-down: '\e011';
+$icon-happyface:           '\e012';
+$icon-lightning:           '\e013';
+
+@font-face {
+  font: {
+    family: 'Gini Icons';
+    style: normal;
+    weight: normal;
+  }
+  src: url('../fonts/Gini-Icons.eot');
+  src: url('../fonts/Gini-Icons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Gini-Icons.woff') format('woff'),
+       url('../fonts/Gini-Icons.ttf') format('truetype'),
+       url('../fonts/Gini-Icons.svg#Gini-Icons') format('svg');
+}
+
