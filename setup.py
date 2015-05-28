@@ -9,7 +9,7 @@ Mainly based on the `sphinx_rtd_theme` by Dave Snider.
 
 """
 from setuptools import setup
-from gini_sphinx_theme_vision import __version__
+from gini_sphinx_theme import __version__
 
 setup(
     name='gini_sphinx_theme',
