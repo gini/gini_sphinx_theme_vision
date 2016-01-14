@@ -72,22 +72,22 @@ h1, h2, h3, h4 {
 
 .highlight-obj-c {
     .highlight {
-        background: rgba(173, 216, 230, 0.45) !important;
+        background: rgba(0,155,51,0.2) !important;
 
         &:before {
             content: "Objective-C";
-            color: darkblue;
+            color: rgba(0,155,51,1);
         }
     }
 }
 
 .highlight-swift {
     .highlight {
-        background: rgba(144, 238, 144, 0.45) !important;
+        background: rgba(205,233,244,1) !important;
 
         &:before {
             content: "Swift";
-            color: darkgreen;
+            color: rgba(75,138,251,1);
         }
     }
 }
