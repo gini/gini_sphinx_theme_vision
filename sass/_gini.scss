@@ -55,3 +55,39 @@ h1, h2, h3, h4 {
         }
     }
 }
+
+// Nice code blocks for swift and obj-c
+.highlight{
+    &:before {
+        position: relative;
+        text-align: right;
+        display: block;
+        margin: 10px 10px -20px;
+        text-transform: uppercase;
+        font-family: $code-font-family;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+.highlight-obj-c {
+    .highlight {
+        background: rgba(173, 216, 230, 0.45) !important;
+
+        &:before {
+            content: "Objective-C";
+            color: darkblue;
+        }
+    }
+}
+
+.highlight-swift {
+    .highlight {
+        background: rgba(144, 238, 144, 0.45) !important;
+
+        &:before {
+            content: "Swift";
+            color: darkgreen;
+        }
+    }
+}
