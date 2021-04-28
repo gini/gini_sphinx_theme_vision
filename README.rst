@@ -34,15 +34,15 @@ Download the package or add it to your ``requirements.txt`` file:
 
 .. code:: bash
 
-    $ pip install sphinx_rtd_theme
+    $ pip install gini_sphinx_theme
 
 In your ``conf.py`` file:
 
 .. code:: python
 
-    import sphinx_rtd_theme
+    import gini_sphinx_theme
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "gini_sphinx_theme"
 
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
@@ -140,7 +140,7 @@ extraneous files. Please do this before you send in a PR.
 Using this theme locally, then building on Read the Docs?
 ==========================================================
 
-Currently if you import sphinx_rtd_theme in your local sphinx build, then pass
+Currently if you import gini_sphinx_theme in your local sphinx build, then pass
 that same config to Read the Docs, it will fail, since RTD gets confused. If
 you want to run this theme locally and then also have it build on RTD, then
 you can add something like this to your config. Thanks to Daniel Oaks for this.
@@ -151,9 +151,9 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
     if not on_rtd:  # only import and set the theme if we're building docs locally
-        import sphinx_rtd_theme
-        html_theme = 'sphinx_rtd_theme'
-        html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+        import gini_sphinx_theme
+        html_theme = 'gini_sphinx_theme'
+        html_theme_path = [gini_sphinx_theme.get_html_theme_path()]
 
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
