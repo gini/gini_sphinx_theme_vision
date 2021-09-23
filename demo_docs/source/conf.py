@@ -109,6 +109,7 @@ html_theme = 'gini_sphinx_theme'
 html_theme_options = {
     # 'sticky_navigation' : True      # Set to False to disable the sticky nav while scrolling.
     # 'google_analytics_id': 'UA-XXX' # Set to a valid tracking ID to enable Google Analytics tracking
+    # 'logo_path' : '_static/logo.png' # Set to a path available in the built sphinx docs to display a custom logo
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -133,7 +134,7 @@ html_theme_path = ["../.."]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
